@@ -1,5 +1,5 @@
 all:
-	gcc fib.c -o fib -g -O0
+	gcc fib.c -o fib -g -O0 -Wall
 
 clean:
 	rm -f fib
