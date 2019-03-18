@@ -49,8 +49,9 @@ For any of the supported events, `perf` can keep a running count during process 
 To generate these statistics, use the stat command of perf. For instance:
 
 ```bash
-sudo perf stat -B dd if=/dev/zero of=/dev/null count=10000001000000+0 records in
+sudo perf stat -B dd if=/dev/zero of=/dev/null count=1000000
 
+1000000+0 records in
 1000000+0 records out
 512000000 bytes (512 MB, 488 MiB) copied, 0.995514 s, 514 MB/s
 
