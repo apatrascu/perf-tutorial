@@ -129,7 +129,8 @@ sudo perf stat -r 5 sleep 1
 By default, perf stat counts in per-thread mode. To count on a per-cpu basis pass the `-a` option. When it is specified by itself, all online processors are monitored and counts are aggregated. For instance:
 
 ```bash
-udo perf stat -B -ecycles:u,instructions:u -a dd if=/dev/zero of=/dev/null count=2000000
+sudo perf stat -B -ecycles:u,instructions:u -a dd if=/dev/zero of=/dev/null count=2000000
+
 2000000+0 records in
 2000000+0 records out
 1024000000 bytes (1.0 GB, 977 MiB) copied, 2.00107 s, 512 MB/s
